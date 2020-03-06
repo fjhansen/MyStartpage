@@ -1,25 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+//import WelcomePage from './components/WelcomePage'
+import * as All from './index';
+import * as T from './config/theme'
+export {T}
 
-function App() {
+function App(props) {
+  console.log("A P P  P R O P S", props)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <All.WelcomePage/>
+
+      <All.Wrap>
+      <All.MainSnip/>
+      <All.LambdaSnip/>
+      <All.ReactSnip/>
+      <All.UtilsSnip/>
+      <All.OldWebSnip/>
+      <All.FunSnip/>
+      </All.Wrap>
+
+    </main>
   );
 }
 

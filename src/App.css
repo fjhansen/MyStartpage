@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+
+
+  background-color: #1b094e;
+}
+
+main {
+  width: 85vw;
+  min-height: 80vh;
+  max-width: 1024px;
+  margin: 35px auto;
+  background: rgba(255, 255, 255, 0.473);
+  
+  background-image: radial-gradient(circle, #172459, #10214e, #0b1d44, #071939, #06152f, #06132b, #051026, #030d22, #030d22, #030d22, #030d22, #030d22);
+  padding: 15px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+
+}
